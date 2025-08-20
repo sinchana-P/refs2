@@ -1,6 +1,6 @@
 {
-  "id": "AEUxTWtNzoDghTYIeoprU",
-  "name": "New Workflow",
+  "id": "IBkgrgDIHUHPRHomJFWDn",
+  "name": "New Workflow 1",
   "workflowName": "New Workflow",
   "itemType": "workflow",
   "appId": "DOfhUgXrcrmDrngRdMcjP",
@@ -21,9 +21,9 @@
         "activityName": "Start",
         "activityGroup": "Common",
         "name": "Select Trigger",
-        "config.name": "Select Trigger",
         "sourceSchemas": []
-      }
+      },
+      "activityCluster": []
     },
     {
       "id": "zMXXxIBjQfeqejCATfhDV",
@@ -38,34 +38,13 @@
         "activityName": "End",
         "activityGroup": "Common",
         "name": "End",
-        "config.name": "End",
         "sourceSchemas": [
           "AYIqzYUBPScQEZdjNevHB",
           "tWcGZIaJSrBLYdTJQIMSk",
           "YTgNfqDxyatHbUkfGHPmx"
         ]
-      }
-    },
-    {
-      "id": "tWcGZIaJSrBLYdTJQIMSk",
-      "stepName": "LookupUpsert",
-      "stepType": "SIMPLE",
-      "icon": "",
-      "indicator": "",
-      "description": "",
-      "deletable": true,
-      "config": {
-        "activityName": "LookupUpsert",
-        "activityGroup": "Common",
-        "activityType": "SIMPLE",
-        "name": "LookupUpsert",
-        "description": "",
-        "lookupTable": "lt:{\"id\":\"rTmmwkqGkJoMqvCSyrOhX\",\"name\":\"my lt 1234567\"}",
-        "config.name": "LookupUpsert",
-        "sourceSchemas": [
-          "YTgNfqDxyatHbUkfGHPmx"
-        ]
-      }
+      },
+      "activityCluster": []
     },
     {
       "id": "AYIqzYUBPScQEZdjNevHB",
@@ -84,12 +63,30 @@
         "dataTable": "dt:{\"id\":\"plGQQNhlFxbeRjQMloVGD\",\"name\":\"Yes-dt77\"}",
         "ttl": 60,
         "isCustomType": true,
-        "config.name": "DataTableUpsert",
         "sourceSchemas": [
-          "tWcGZIaJSrBLYdTJQIMSk",
-          "YTgNfqDxyatHbUkfGHPmx"
+          "tWcGZIaJSrBLYdTJQIMSk"
         ]
-      }
+      },
+      "activityCluster": []
+    },
+    {
+      "id": "tWcGZIaJSrBLYdTJQIMSk",
+      "stepName": "LookupUpsert",
+      "stepType": "SIMPLE",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "LookupUpsert",
+        "activityGroup": "Common",
+        "activityType": "SIMPLE",
+        "name": "LookupUpsert",
+        "description": "",
+        "lookupTable": "lt:{\"id\":\"rTmmwkqGkJoMqvCSyrOhX\",\"name\":\"my lt 1234567\"}",
+        "sourceSchemas": []
+      },
+      "activityCluster": []
     }
   ],
   "transitions": [
@@ -163,24 +160,6 @@
       "sourcePosition": null,
       "targetPosition": "left"
     },
-    "tWcGZIaJSrBLYdTJQIMSk": {
-      "x": 192,
-      "y": 48,
-      "handles": [
-        {
-          "type": "target",
-          "position": "left",
-          "id": "tWcGZIaJSrBLYdTJQIMSk_1"
-        },
-        {
-          "type": "source",
-          "position": "right",
-          "id": "tWcGZIaJSrBLYdTJQIMSk_2"
-        }
-      ],
-      "sourcePosition": "right",
-      "targetPosition": "left"
-    },
     "AYIqzYUBPScQEZdjNevHB": {
       "x": 356,
       "y": 48,
@@ -194,6 +173,24 @@
           "type": "source",
           "position": "right",
           "id": "AYIqzYUBPScQEZdjNevHB_2"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": "left"
+    },
+    "tWcGZIaJSrBLYdTJQIMSk": {
+      "x": 192,
+      "y": 48,
+      "handles": [
+        {
+          "type": "target",
+          "position": "left",
+          "id": "tWcGZIaJSrBLYdTJQIMSk_1"
+        },
+        {
+          "type": "source",
+          "position": "right",
+          "id": "tWcGZIaJSrBLYdTJQIMSk_2"
         }
       ],
       "sourcePosition": "right",

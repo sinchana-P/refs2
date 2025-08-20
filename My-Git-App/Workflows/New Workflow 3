@@ -1,6 +1,6 @@
 {
-  "id": "AEUxTWtNzoDghTYIeoprU",
-  "name": "New Workflow",
+  "id": "vnNOaEQomNtfudpjnDaHl",
+  "name": "New Workflow 3",
   "workflowName": "New Workflow",
   "itemType": "workflow",
   "appId": "DOfhUgXrcrmDrngRdMcjP",
@@ -21,9 +21,9 @@
         "activityName": "Start",
         "activityGroup": "Common",
         "name": "Select Trigger",
-        "config.name": "Select Trigger",
         "sourceSchemas": []
-      }
+      },
+      "activityCluster": []
     },
     {
       "id": "zMXXxIBjQfeqejCATfhDV",
@@ -38,13 +38,13 @@
         "activityName": "End",
         "activityGroup": "Common",
         "name": "End",
-        "config.name": "End",
         "sourceSchemas": [
           "AYIqzYUBPScQEZdjNevHB",
           "tWcGZIaJSrBLYdTJQIMSk",
           "YTgNfqDxyatHbUkfGHPmx"
         ]
-      }
+      },
+      "activityCluster": []
     },
     {
       "id": "tWcGZIaJSrBLYdTJQIMSk",
@@ -61,11 +61,11 @@
         "name": "LookupUpsert",
         "description": "",
         "lookupTable": "lt:{\"id\":\"rTmmwkqGkJoMqvCSyrOhX\",\"name\":\"my lt 1234567\"}",
-        "config.name": "LookupUpsert",
         "sourceSchemas": [
           "YTgNfqDxyatHbUkfGHPmx"
         ]
-      }
+      },
+      "activityCluster": []
     },
     {
       "id": "AYIqzYUBPScQEZdjNevHB",
@@ -84,12 +84,12 @@
         "dataTable": "dt:{\"id\":\"plGQQNhlFxbeRjQMloVGD\",\"name\":\"Yes-dt77\"}",
         "ttl": 60,
         "isCustomType": true,
-        "config.name": "DataTableUpsert",
         "sourceSchemas": [
           "tWcGZIaJSrBLYdTJQIMSk",
           "YTgNfqDxyatHbUkfGHPmx"
         ]
-      }
+      },
+      "activityCluster": []
     }
   ],
   "transitions": [
