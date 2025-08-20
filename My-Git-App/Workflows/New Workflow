@@ -4,7 +4,7 @@
   "workflowName": "New Workflow",
   "itemType": "workflow",
   "appId": "DOfhUgXrcrmDrngRdMcjP",
-  "folderId": "ewGPQzpeJoTREIxcBvzFR",
+  "folderId": "XjADvZtfPjEABTzAWEvQv",
   "type": "ORCHESTRATION",
   "version": "0.0.1",
   "steps": [
@@ -47,25 +47,6 @@
       }
     },
     {
-      "id": "tWcGZIaJSrBLYdTJQIMSk",
-      "stepName": "LookupUpsert",
-      "stepType": "SIMPLE",
-      "icon": "",
-      "indicator": "",
-      "description": "",
-      "deletable": true,
-      "config": {
-        "activityName": "LookupUpsert",
-        "activityGroup": "Common",
-        "activityType": "SIMPLE",
-        "name": "LookupUpsert",
-        "description": "",
-        "lookupTable": "lt:{\"id\":\"OuMWjjdWdCbeUxAiDmNcG\",\"name\":\"data-user-lt\"}",
-        "config.name": "LookupUpsert",
-        "sourceSchemas": []
-      }
-    },
-    {
       "id": "AYIqzYUBPScQEZdjNevHB",
       "stepName": "DataTableUpsert",
       "stepType": "SIMPLE",
@@ -79,14 +60,32 @@
         "activityType": "SIMPLE",
         "name": "DataTableUpsert",
         "description": "",
-        "dataTable": "dt:{\"id\" : \"AWAfwdHztGLlRWfxihVQa\", \"name\" : \"Yes-dt-237\"}",
+        "dataTable": "dt:{\"id\":\"AIShAwXxniBaPmcymmWGj\",\"name\":\"aaaa\"}",
         "ttl": 60,
         "isCustomType": true,
         "config.name": "DataTableUpsert",
         "sourceSchemas": [
-          "tWcGZIaJSrBLYdTJQIMSk",
-          "YTgNfqDxyatHbUkfGHPmx"
+          "tWcGZIaJSrBLYdTJQIMSk"
         ]
+      }
+    },
+    {
+      "id": "tWcGZIaJSrBLYdTJQIMSk",
+      "stepName": "LookupUpsert",
+      "stepType": "SIMPLE",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "LookupUpsert",
+        "activityGroup": "Common",
+        "activityType": "SIMPLE",
+        "name": "LookupUpsert",
+        "description": "",
+        "lookupTable": "lt:{\"id\":\"QfUTlPTKnWCdhaXDvWByP\",\"name\":\"Okay\"}",
+        "config.name": "LookupUpsert",
+        "sourceSchemas": []
       }
     }
   ],
@@ -161,24 +160,6 @@
       "sourcePosition": null,
       "targetPosition": "left"
     },
-    "tWcGZIaJSrBLYdTJQIMSk": {
-      "x": 192,
-      "y": 48,
-      "handles": [
-        {
-          "type": "target",
-          "position": "left",
-          "id": "tWcGZIaJSrBLYdTJQIMSk_1"
-        },
-        {
-          "type": "source",
-          "position": "right",
-          "id": "tWcGZIaJSrBLYdTJQIMSk_2"
-        }
-      ],
-      "sourcePosition": "right",
-      "targetPosition": "left"
-    },
     "AYIqzYUBPScQEZdjNevHB": {
       "x": 356,
       "y": 48,
@@ -192,6 +173,24 @@
           "type": "source",
           "position": "right",
           "id": "AYIqzYUBPScQEZdjNevHB_2"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": "left"
+    },
+    "tWcGZIaJSrBLYdTJQIMSk": {
+      "x": 192,
+      "y": 48,
+      "handles": [
+        {
+          "type": "target",
+          "position": "left",
+          "id": "tWcGZIaJSrBLYdTJQIMSk_1"
+        },
+        {
+          "type": "source",
+          "position": "right",
+          "id": "tWcGZIaJSrBLYdTJQIMSk_2"
         }
       ],
       "sourcePosition": "right",
