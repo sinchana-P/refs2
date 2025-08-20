@@ -4,7 +4,7 @@
   "workflowName": "New Workflow",
   "itemType": "workflow",
   "appId": "DOfhUgXrcrmDrngRdMcjP",
-  "folderId": "ZVoqCuWHxMMGkyAnXqcat",
+  "folderId": "lkSbWZxigQnpbabMRUPXr",
   "type": "ORCHESTRATION",
   "version": "0.0.1",
   "steps": [
@@ -60,11 +60,9 @@
         "activityType": "SIMPLE",
         "name": "LookupUpsert",
         "description": "",
-        "lookupTable": "lt:{\"id\":\"rTmmwkqGkJoMqvCSyrOhX\",\"name\":\"my lt 1234567\"}",
+        "lookupTable": "lt:{\"id\":\"rTmmwkqGkJoMqvCSyrOhX\",\"name\":\"qwwqw\"}",
         "config.name": "LookupUpsert",
-        "sourceSchemas": [
-          "YTgNfqDxyatHbUkfGHPmx"
-        ]
+        "sourceSchemas": []
       }
     },
     {
@@ -81,13 +79,12 @@
         "activityType": "SIMPLE",
         "name": "DataTableUpsert",
         "description": "",
-        "dataTable": "dt:{\"id\":\"plGQQNhlFxbeRjQMloVGD\",\"name\":\"Yes-dt77\"}",
+        "dataTable": "dt:{\"id\":\"plGQQNhlFxbeRjQMloVGD\",\"name\":\"Dt-77\"}",
         "ttl": 60,
         "isCustomType": true,
         "config.name": "DataTableUpsert",
         "sourceSchemas": [
-          "tWcGZIaJSrBLYdTJQIMSk",
-          "YTgNfqDxyatHbUkfGHPmx"
+          "tWcGZIaJSrBLYdTJQIMSk"
         ]
       }
     }
